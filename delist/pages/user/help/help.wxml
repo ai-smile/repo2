@@ -1,0 +1,28 @@
+
+<view class="top-decorate">
+    <image  mode="aspectFit" src="/images/boy.png" style="width:70px;height:70px"></image>
+</view>
+
+
+<view class="unite">
+    <view class="help">
+        <view style="padding:6px;width:28px;font-size:1.6em;color:white">使用指南</view>
+        <view class="help-items"> 
+            <view wx:for="{{helplst}}" wx:key="{{index}}">{{item.note}}</view>
+        </view>
+    </view>
+</view>
+
+<view class="top-decorate" style="flex-direction:row-reverse">
+    <image  mode="aspectFit" src="/images/girl.png" style="width:70px;height:70px"></image>
+</view>
+
+<view class="unite">
+    <view class="help">
+        <view class="help-items">"Delist"旨在帮助用户合理的规划学习任务，采用任务奖励法进行激励，告别拖延，培养用户的学习兴趣。</view>
+        <view style="padding:6px;width:28px;font-size:1.6em;color:#fff">关于我们</view>
+    </view>
+</view>
+
+
+

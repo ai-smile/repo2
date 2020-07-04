@@ -1,0 +1,75 @@
+<view class="xinjian">
+	<image src="cloud://micro-lkzba.6d69-micro-lkzba-1301856164/xinjian-top.png" style="width:100%;height:100rpx;"></image>
+
+	<view class="content">
+		<!-- 自动获取焦点foucs="{true}" -->
+		<view class="input">
+			<textarea class="name" auto-height="true" placeholder="请输入清单内容(支持语音输入)..." contenteditable="true" value='{{name}}' placeholder-style='font-size:40rpx;' maxlength="-1" bindblur="addName"></textarea>
+
+			<view class="xinjian-xiangji" bindtap="uploadImage">
+				<image src="cloud://micro-lkzba.6d69-micro-lkzba-1301856164/xinjian-camera.png" style="width:60rpx;height:60rpx;"></image>
+			</view>
+		</view>
+	</view>
+
+	<!-- 事件紧急程度 -->
+	<view class="priority">
+		<view class="txt">紧急程度：</view>
+		<radio-group class="radio-group" bindchange="radioChange">
+			<label wx:for="{{radio}}" wx:key="{{index}}">
+				<radio value="{{item.va}}" checked="{{item.va == zhcolor}}" disabled="{{num[item.va]?'':'disabled'}}" /> {{item.name}}
+			</label>
+		</radio-group>
+	</view>
+
+	<!-- <view class="time">
+	// 开始时间 
+		<picker mode="date" value="{{date}}" start="2020-01-01" end="2050-12-31" bindchange="bindStartDate">
+			<view class="date">
+				<view class="start-date">
+					<view>开始:</view>
+					<view>{{startdates}}
+						<image src="/images/xialajiantou (2).png" style="width:50rpx;height:50rpx;"></image>
+					</view>
+				</view>
+			</view>
+		</picker>
+
+		<view class="line"></view>
+
+		// 结束时间
+		<picker mode="date" value="{{date}}" start="2020-01-01" end="2050-12-31" bindchange="bindEndDate">
+			<view class="date">
+				<view class="end-date">
+					<view>结束:</view>
+					<view>{{enddates}}
+						<image src="/images/xialajiantou (2).png" style="width:50rpx;height:50rpx;"></image>
+					</view>
+				</view>
+			</view>
+		</picker>
+	</view> -->
+
+
+	<view class="sub">
+		<view class="submit" bindtap="addData">
+			<image src="cloud://micro-lkzba.6d69-micro-lkzba-1301856164/xinjian-addbtn.png" mode="aspectFill" style="height:100rpx;width:300rpx"></image>
+		</view>
+	</view>
+
+	<!-- 开始语音 弹出语音图标表示正在录音 -->
+	<cover-view class="startYuyinImage" wx:if="{{recordState == true}}">
+		<cover-image src="cloud://micro-lkzba.6d69-micro-lkzba-1301856164/yuyin.png" mode="aspectFill" style="width:60px;height:60px"></cover-image>
+		<cover-view>正在语音</cover-view>
+	</cover-view>
+	<!-- 语音输入 -->
+	<view class="yuyinWrap">
+		<view class='btn'>
+			<button hover-class="yuyinBtn {{recordState == true ? 'yuyinBtnBg':''}}" bindtouchstart="touchStart" bindtouchend="touchEnd">
+				<text wx:if="{{recordState == false}}">
+					<text class="cuIcon-voicefill lg text-grey"></text> 按 住 说 话</text>
+				<text wx:else>松 开 结 束</text>
+			</button>
+		</view>
+	</view>
+</view>

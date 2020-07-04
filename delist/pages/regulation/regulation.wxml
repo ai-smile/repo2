@@ -1,0 +1,53 @@
+<view class="background">
+	<image src="cloud://micro-lkzba.6d69-micro-lkzba-1301856164/积分规则1.png"  mode="aspectFit" style="width:80rpx;height:80rpx"></image>
+	<image src="cloud://micro-lkzba.6d69-micro-lkzba-1301856164/积分规则2.png"  mode="aspectFit" style="width:80rpx;height:80rpx"></image>
+</view>
+<!-- 积分规则 -->
+<view class="rules">
+	<view class="padding radius shadow-warp bg-white" style="display:flex;flex-direction:column">
+		<view class="title">
+			<text class="cuIcon-title lg text-brown"></text>
+			<text>积分规则</text>
+		</view>
+		<view>
+
+			<text class="txt">用户积分获得方式主要分为完成清单任务及签到，主要规则如下：</text>
+			<!-- 表头 -->
+			<view class="table">
+
+				<view class="tr bg-w">
+
+					<view class="th">获得计分方式</view>
+
+					<view class="tw">积分值</view>
+
+				</view>
+				<!-- 表格内容 -->
+
+				<view wx:for="{{jifenList}}" wx:key="{{index}}">
+
+					<view class="tr bg-g">
+
+						<view class="td">{{item.content}}</view>
+
+						<view class="ts">{{item.fenzhi}}</view>
+
+					</view>
+
+				</view>
+
+			</view>
+			<!-- 注意事项 -->
+			<view class="note">
+				<text class="cuIcon-tagfill lg text-red" style="font-size:1.1em">Note:</text>
+				<text class="nt">1) 红色等级任务每日设定数量不得超过2个</text>
+				<text class="nt">2) 黄色等级任务每日设定数量不得超过3个</text>
+				<text class="nt">3) 绿色等级任务每日设定数量不得超过4个</text>
+				<text class="nt">4) 每日总积分不超过100分</text>
+			</view>
+		</view>
+	</view>
+</view>
+<!-- <view class="bottom">
+<image src="/images/shoucang.png" mode="aspectFit" style="width:80rpx;height:80rpx"></image>
+</view> -->

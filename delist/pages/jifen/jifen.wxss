@@ -1,0 +1,39 @@
+.txt{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.txt image{ 
+  width: 100%;
+  height: 120rpx;
+  margin: 20rpx;
+}
+
+.title{
+  font-size: 3em;
+  font-weight: bold;
+  color:#C0CF71
+}
+.duihuan{
+  height: 26px;
+  text-align: center;
+  font-size: 1em;
+  line-height: 26px;
+  background-color: #C0CF71;
+  color: white;
+}
+.cu-item image{
+  width: 240rpx;
+  height: 220rpx;
+  padding-left: 5rpx;
+}
+.cu-list.grid>.cu-item {
+  position: relative;
+  display: flex;
+  padding: 20rpx 0 20rpx;
+  transition-duration: 0s;
+  flex-direction: column;
+  }
+  

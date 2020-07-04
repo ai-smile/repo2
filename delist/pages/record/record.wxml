@@ -1,0 +1,33 @@
+<view class="record">
+	<!-- 可用积分 -->
+	<view class="yuan">
+		<view class="top">
+			<view>可用积分</view>
+			<view class="zhi">{{available}}</view>
+		</view>
+	</view>
+	<!--  -->
+  <!-- <view class="mid">
+    <image src="cloud://micro-lkzba.6d69-micro-lkzba-1301856164/record-mid.png" style="width:100%;height:100rpx"></image>
+  </view> -->
+	<!-- 记录 -->
+	<view class="container-part1">
+		<view class="container-section">
+			<view class='option_box' style='height:{{show?(selectData.length>5?300:selectData.length*60):0}}rpx;'>
+				<text class='option' style='{{index==selectData.length-1&&"border:0;"}}' wx:for='{{selectData}}' wx:key='this' data-index='{{index}}' catchtap='option'>{{item}}</text>
+			</view>
+		</view>
+	</view>
+  
+  <view class="container-part1" style="margin-top:10rpx" wx:for='{{worklist}}'>
+    <view class="container-section">
+      <view class="container-text">{{item.pro}}
+        <view style="font-size:0.8em">{{item.time}}</view>
+      </view>     
+    </view>
+  <view class="container-section" >
+    <view class="container-text">{{item.up}}</view>     
+  </view>
+</view>
+
+</view>

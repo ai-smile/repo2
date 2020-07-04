@@ -1,0 +1,56 @@
+{
+  "pages":[
+    "pages/get/get",
+    "pages/index/index",
+    "pages/complete/complete",
+    "pages/xinjian/xinjian",
+    "pages/jifen/jifen",
+    "pages/regulation/regulation",
+    "pages/sign/sign",
+    "pages/user/user",
+    "pages/record/record",
+    "pages/shuju/shuju"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Delist",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 40
+  },
+  "tabBar": {
+    "selectedColor": "#3399CC",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "新建清单",
+        "iconPath": "/images/icon-xinjian (1).png",
+        "selectedIconPath": "/images/icon-xinjian.png"
+      },
+      {
+        "pagePath": "pages/jifen/jifen",
+        "text": "积分商城",
+        "iconPath": "/images/icon-liwu.png",
+        "selectedIconPath": "/images/icon-liwu (1).png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "个人中心",
+        "iconPath": "/images/icon-user.png",
+        "selectedIconPath": "/images/icon-user(1).png"
+      }
+    ]
+  },
+  "plugins": {
+
+    "WechatSI": {
+
+      "version": "0.3.3",
+
+      "provider": "wx069ba97219f66d99"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

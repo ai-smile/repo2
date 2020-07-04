@@ -1,0 +1,55 @@
+.con{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color:#C0CF71;
+}
+.jinri{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lishi{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ .del-top{
+  display: flex;
+  flex-direction:row;
+  border: 2px solid white;
+  border-radius: 10rpx;
+  color: black;
+  font-size: 1.4em;
+  margin-top: 10rpx;
+}
+.icon{
+  display: flex;
+  align-items: center;
+  /* padding-bottom: 10rpx;
+  padding-top: 10rpx; */
+}
+/* .content{
+  padding: 20rpx; 
+   padding-top: 10rpx;
+} */
+
+/* 顶部导航栏 */
+.nav-header {
+  font-size: 34rpx;
+  display: -webkit-box;
+  text-align: center;
+  background: #fff;
+  /* padding: 0 16.41rpx; */
+  height: 100.77rpx;
+  line-height: 100.77rpx;
+}
+
+.nav-cell {
+  -webkit-box-flex: 1;
+}
+
+.nav-cell.active {
+  color: #ff4b2d;
+  border-bottom: #ff4b2d 4.69rpx solid;
+}

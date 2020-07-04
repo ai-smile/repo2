@@ -1,0 +1,20 @@
+<view class="tj">
+    <view class="tj_text"><view>累计完成</view><view class="tj_num">{{total}}</view></view>
+    <view class="tj_text"><view>今日任务</view><view class="tj_num">{{sum}}</view></view>
+    <view class="tj_text"><view>今日完成</view><view class="tj_num">{{finished}}</view></view>
+</view>
+
+<view class="picture">
+
+<view class="title">
+<view class="title-left">本周任务记录</view>
+<view class="title-left"> 
+<image  mode="aspectFit" src="/images/pre.png" style="height:60rpx;width:60rpx" bindtap="pre"/>
+<image  mode="aspectFit" src="/images/next.png" style="height:60rpx;width:60rpx;margin-left:45rpx" bindtap="next"/>
+</view>
+</view>
+<!--绘图-->
+  <view class="container">
+    <ec-canvas id="linechart" canvas-id="mychart" ec="{{ ec }}"></ec-canvas>
+  </view>
+</view>
