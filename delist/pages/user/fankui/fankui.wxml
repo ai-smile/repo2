@@ -1,8 +1,0 @@
-<view class="issue" >
-    <image src="/images/top.png" style="width:100%;height:90px"></image>
-    <textarea placeholder="遇到了什么问题呢?" bindinput="input" value='{{text}}'></textarea>
-    <view class="bt_box">
-        <view ><button bindtap="clear">NO</button></view>
-        <view ><button bindtap="submit">OK</button></view>
-    </view>
-</view>
